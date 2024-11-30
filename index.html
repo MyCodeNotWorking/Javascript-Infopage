@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alles über JavaScript</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+  <header class="bg-gray-800 text-yellow-400 py-5 text-center shadow-lg">
+    <h1 class="text-5xl font-bold tracking-wide fade-in">JavaScript</h1>
+    <p class="text-xl mt-2 fade-in">Alles wichtige über die Programmiersprache JS</p>
+  </header>
+
+  <main class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Was ist JavaScript?</h2>
+      <p class="leading-relaxed">
+        JavaScript ist eine Programmiersprache, die Entwickler verwenden, um interaktive Webseiten zu erstellen. 
+        Von der Aktualisierung von Social Media Feeds bis hin zur Anzeige von Animationen und interaktiven Karten können 
+        JavaScript-Funktionen die Benutzerfreundlichkeit einer Website verbessern. Als clientseitige Skriptsprache ist sie 
+        eine der Kerntechnologien des World Wide Web. Wenn Sie zum Beispiel im Internet surfen und ein Bildkarussell, 
+        ein Dropdown-Menü zum Anklicken oder dynamisch wechselnde Elementfarben auf einer Webseite sehen, sehen Sie die Auswirkungen von JavaScript.
+        <br>
+        <strong>Quelle:</strong> https://aws.amazon.com/de/what-is/javascript/ (Abschnitt "Was ist Javascript")
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Geschichte von JavaScript</h2>
+      <p class="leading-relaxed">
+        JavaScript wurde 1995 von Brendan Eich für den Netscape Navigator entwickelt. Die Sprache entstand in einer Zeit, 
+        in der das Web noch in den Kinderschuhen steckte und Interaktivität dringend benötigt wurde. Mit der Einführung von 
+        Technologien wie AJAX und modernen Frameworks hat JavaScript die Art und Weise, wie wir das Web erleben, revolutioniert.
+        <br>
+        <strong>Quelle:</strong> https://de.wikipedia.org/wiki/JavaScript (Abschnitt "Geschichte" zusammengefasst)
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Warum wurde JavaScript erfunden?</h2>
+      <p class="leading-relaxed">
+        JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, 
+        um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML zu erweitern.
+        Heute wird JavaScript auch außerhalb von Browsern angewendet, etwa auf Servern und in Microcontrollern.
+        <br>
+        <strong>Quelle:</strong> https://de.wikipedia.org/wiki/JavaScript (Abschnitt "Javascript")
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Beispielcode in JavaScript</h2>
+      <pre class="bg-gray-800 text-gray-200 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <code>
+console.log("Hallo, Welt!");
+
+function addiere(a, b) {
+  return a + b;
+}
+console.log(addiere(5, 3));
+
+document.querySelector("button").addEventListener("click", () => {
+  alert("Knopf geklickt!");
+});
+        </code>
+      </pre>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Vorteile und Nachteile von JavaScript</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2 text-green-400">Vorteile</h3>
+          <ul class="list-disc pl-5">
+            <li>Einfach zu lernen</li>
+            <li>Plattformunabhängig</li>
+            <li>Viele verschiedene Einsatzmöglichkeiten</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2 text-red-400">Nachteile</h3>
+          <ul class="list-disc pl-5">
+            <li>Manchmal inkonsistentes Verhalten</li>
+            <li>Kann zu Sicherheitsrisiken führen (z.B. XSS-Attacke)</li>
+            <li>Debugging kann schwierig sein</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Witzige Dinge in JavaScript</h2>
+      <p class="leading-relaxed">
+        JavaScript ist berühmt für sein manchmal merkwürdiges Verhalten. Hier sind ein paar Beispiele:
+      </p>
+      <pre class="bg-gray-800 text-gray-200 p-4 rounded-lg shadow-md">
+        <code>
+[] == 0;      // true
+0 == "0";     // true
+"0" == [];    // false
+
+2 + "2";      // "22"
+2 - "2";      // 0
+        </code>
+      </pre>
+      <p class="mt-4">
+        Mehr solcher Beispiele findest du in diesem 
+        <a href="https://www.youtube.com/watch?v=aXOChLn5ZdQ" class="text-yellow-400 underline hover:text-yellow-300">Video</a>.
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Warum ich JavaScript mag</h2>
+      <p class="leading-relaxed">
+        Ich mag JavaScript, weil es eine sehr einfach zu lernende, aber auch schnelle Sprache ist. Egal ob einfache Webseiten, komplexe Spiele, 
+        oder sogar Server – mit JavaScript kann ich fast alles machen.
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Was kann man mit JavaScript machen?</h2>
+      <ul class="list-disc pl-5 leading-relaxed">
+        <li>Interaktive Webseiten</li>
+        <li>Spiele mit PhaserJS</li>
+        <li>3D-Grafiken mit ThreeJS</li>
+        <li>Mobile Apps mit React Native</li>
+        <li>Desktop-Apps mit Electron</li>
+        <li>Serveranwendungen mit Node.js</li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Lernressourcen für JavaScript</h2>
+      <ul class="list-disc pl-5 leading-relaxed">
+        <li>
+          <a href="https://developer.mozilla.org/de/docs/Web/JavaScript" class="text-yellow-400 underline hover:text-yellow-300">
+            MDN Web Docs – JavaScript Einführung
+          </a>
+        </li>
+        <li>
+          <a href="https://javascript.info/" class="text-yellow-400 underline hover:text-yellow-300">
+            The Modern JavaScript Tutorial
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/" class="text-yellow-400 underline hover:text-yellow-300">
+            FreeCodeCamp
+          </a>
+        </li>
+        <li>
+          <a href="https://eloquentjavascript.net/" class="text-yellow-400 underline hover:text-yellow-300">
+            Eloquent JavaScript (Buch)
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">Kurzer Info-Text zu TypeScript</h2>
+      <p class="leading-relaxed">
+        TypeScript ist ein Superset von JavaScript, das JavaScript um optionale statische Typisierung und erweiterte Funktionen erweitert. 
+        Es wurde von Microsoft entwickelt und erstmals im Oktober 2012 veröffentlicht. Seit seiner Veröffentlichung 
+        im Jahr 2012 hat es sich in der Webentwicklergemeinschaft schnell durchgesetzt.
+        <br>
+        <strong>Quelle:</strong> https://kinsta.com/de/wissensdatenbank/was-ist-typescript/ (Abschnitt "Was ist TypeScript?")
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-center py-5 text-gray-400">
+    <p>Erstellt mit ❤️ und JavaScript.</p>
+  </footer>
+
+</body>
+
+</html>
